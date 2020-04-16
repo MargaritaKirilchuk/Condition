@@ -48,18 +48,18 @@ public class Condition {
 
     private boolean on;
 
-    public void increaseCurrentTemperature(int currentTemperature) {
-        if (currentTemperature++ > maxTemperature) {
+    public void increaseCurrentTemperature() {
+        if ((currentTemperature+1) > maxTemperature) {
             return;
         }
-        this.currentTemperature++;
+        currentTemperature++;
             }
 
-    public void decreaseCurrentTemperature(int currentTemperature){
-        if (currentTemperature -- < minTemperature) {
+    public void decreaseCurrentTemperature(){
+        if ((currentTemperature - 1) < minTemperature) {
             return;
         }
-        this.currentTemperature--;
+        currentTemperature--;
         }
 
 }
